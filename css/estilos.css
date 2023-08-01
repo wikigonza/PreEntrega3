@@ -102,16 +102,45 @@ a:visited {
   font-family: Ovo-Regular;
   text-align: center;
   overflow: hidden;
-} /*Acá creo las clases para el footer*/
-.footer {
+}
+.footer-icons .footer {
   display: inline-block;
   margin: 0 10px;
   text-decoration: none;
   color: aquamarine;
-} /*Acá creo las clases para el footer*/
+}
+
+/*Aquí anido las clases para el footer*/
 /*Clases para las subscripciones*/
 /*A continuación creo los "botones" de subscripción. Para esto creo un contenedor que a su vez tiene tres otros elementos dentro: el tipo de plan (h2), el text del plan (p), y el botón de seleccionar (button)*/
 .subscripcion-container {
+  text-align: center;
+  font-family: Ovo-Regular;
+  /*.card {
+    height: 500px;
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 10px;*/
+  /*.imagenCard {
+          height: 50%;
+          object-fit: cover;
+  }*/
+}
+.subscripcion-container .subscripcion-box {
+  width: 200px;
+  height: 500px;
+  background-color: aquamarine;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+.subscripcion-container .subscripcion-box p {
+  font-size: 60px;
+}
+
+/*.subscripcion-container {
   text-align: center;
   font-family: Ovo-Regular;
 }
@@ -119,7 +148,7 @@ a:visited {
 .subscripcion-box {
   width: 300px;
   height: 500px;
-  background-color: aquamarine;
+  background-color: $color-letra;
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px;
@@ -144,16 +173,17 @@ a:visited {
   text-decoration: none;
 }
 
-.customCard {
-  height: 800px;
-  width: 250px;
-}
+.card {
+      height: 500px;
+      width: 300px;
+      font-size: 20px;
+      margin-bottom: 10px;
 
 .imagenCard {
   height: 33%;
   object-fit: scale-down;
 }
-
+*/
 @media screen and (max-width: 1560px) {
   .navbar-nav {
     flex-wrap: wrap;
@@ -176,4 +206,10 @@ a:visited {
   .mapContainer iframe {
     height: 250px;
   }
-} /*Aquí hago el media query para el mapa en página Tienda*//*# sourceMappingURL=estilos.css.map */
+} /*Aquí hago el media query para el mapa en página Tienda*/
+.card {
+  height: 500px;
+  width: 300px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=estilos.css.map */
