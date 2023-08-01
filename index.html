@@ -14,8 +14,8 @@
         <header class="header sticky-top"> <!--Aquí hago el header sticky-->
            
             <!--Comienzo con el navbar de bootsrap-->
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;"> <!--Aquí estilo el navbar para que sea de color negro-->
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000;"> <!--Aquí estilo el navbar para que sea de color negro-->
+                <div class="container-fluid" >
                   <a class="navbar-brand" href="#">
                     <img src="./assets/img/logopng.png" alt="Logo Zalo's Jerky" width="115" height="115"> <!--Estilo el logo del navbar para que se visualize correctamente-->
                   </a>
@@ -23,7 +23,7 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between" style="width: 100%; font-family: 'emilio'; font-size: 25px;"> <!--Estilo los lista items para que queden justificados en el navbar-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-between" style="width: 100%; font-family: 'emilio'; font-size: 25px;"> <!--Estilo los lista items para que queden justificados en el navbar--->
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                       </li>
@@ -49,6 +49,7 @@
             
 
         </header>
+        
         <main>
             <div>
                 <div id="carouselExampleCaptions" class="carousel slide">
@@ -90,31 +91,30 @@
                     </button>
                   </div>
             </div>
-            <div>
-                <center><img class="imagenAdaptive" src="./assets/img/logopng.png" alt="Logo de la empresa"></center>
-            </div> <!--Aquí coloco y estilo el logo de la empresa-->
-            <div><h1 style="font-family: Ovo-Regular; font-size: 45px; color: aquamarine; text-align: center;">Snacks de carne deshidratada para disfrutar en todo momento</h1>
-            </div>
-            
-            <br><br><br>
-
-            <div class="row" style="font-family: Ovo-Regular;">
-                <div class="col-sm-6 mb-3 mb-sm-0">
-                    <div class="card border-0">
-                        <div class="card-body" style="background-color: #000; color: aquamarine;">
-                        <h5 class="card-title" style="font-size: 25px;text-align: center;">Zalo's Jerky es un producto artesanal realizado en pequeñas tandas con el fin de asegurar la calidad, frescura y consistencia de todos nuestros productos para una experiencia superior</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card border-0"> <!--Aquí elimino el borde que viene por defecto con la card-->
-                    <div class="card-body" style="background-color: #000; color: aquamarine;">
-                      <h5 class="card-title" style="font-size: 25px; text-align: center;">Utilizamos ingredientes de la mejor calidad y carne de pastura que asegura una completa absorción de sabores durante el proceso de marinado. Todos nuestros productos son producidos con ingredientes 100% naturales</h5>
-                    </div>
-                  </div>
+            <div class="container"> 
+              <div class="row justify-content-center"> 
+                <div class="col-sm-8 col-md-6 col-lg-6"> 
+                  <img class="img-fluid imagenAdaptive" src="./assets/img/logopng.png" alt="Logo de la empresa">
                 </div>
               </div>
-        
+            </div>
+             <!--Aquí coloco y estilo el logo de la empresa-->
+            
+             <div><h1 style="font-family: Ovo-Regular; font-size: 45px; color: aquamarine; text-align: center;">Snacks de carne deshidratada para disfrutar en todo momento</h1>
+            </div>
+            
+          
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-6 mb-4" style="font-family: Ovo-Regular; color: aquamarine; font-size: 25px;">
+                  Zalo's Jerky es un producto artesanal realizado en pequeñas tandas con el fin de asegurar la calidad, frescura y consistencia de todos nuestros productos para una experiencia superior
+                </div>
+                <div class="col-md-6" style="font-family: Ovo-Regular; color: aquamarine; font-size: 25px;">
+                  Utilizamos ingredientes de la mejor calidad y carne de pastura que asegura una completa absorción de sabores durante el proceso de marinado. Todos nuestros productos son producidos con ingredientes 100% naturales
+                </div>
+              </div>
+            </div>
+                   
             
         </main>
         <br>
