@@ -1,4 +1,6 @@
 $color-letra: aquamarine;
+$font-principal: Ovo-Regular;
+$font-size:20px;
 
 * {
   padding: 0;
@@ -27,7 +29,7 @@ a {
   left: 0;
   width: 100%;
   padding: 10px;
-  font-family: Ovo-Regular;
+  font-family: $font-principal;
   font-size: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -36,7 +38,7 @@ a {
 
 /*Aquí creo el formulario y los estilos del mismo*/
 .claseFormulario {
-  font-family: Ovo-Regular;
+  font-family: $font-principal;
   font-size: 20px;
   color: $color-letra;
 }
@@ -60,13 +62,13 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: Ovo-Regular;
+  font-family: $font-principal;
   font-size: 20px;
 }
 
 .carousel-item {
   height: 80vh;
-  font-family: Ovo-Regular;
+  font-family: $font-principal;
 } /*Aquí defino la altura del carrousel y la tipografía*/
 .carousel-item img {
   height: 100%;
@@ -76,7 +78,7 @@ input[type=submit] {
 @media screen and (max-width: 480px) {
   .carousel-item {
     height: 60vh;
-    font-family: Ovo-Regular;
+    font-family: $font-principal;
   }
   .carousel-item img {
     height: 100%;
@@ -106,7 +108,7 @@ a:visited {
 } /*Aquí llamo a la tipografía para luego sourcearla*/
 
 .footer-icons {
-    font-family: Ovo-Regular;
+    font-family: $font-principal;
     text-align: center;
     overflow: hidden;
     .footer {
@@ -123,7 +125,7 @@ a:visited {
 
 .subscripcion-container {
     text-align: center;
-    font-family: Ovo-Regular;
+    font-family: $font-principal;
   
     .subscripcion-box {
       width: 200px;
@@ -157,7 +159,7 @@ a:visited {
   
 /*.subscripcion-container {
   text-align: center;
-  font-family: Ovo-Regular;
+  font-family: $font-principal;
 }
 
 .subscripcion-box {
