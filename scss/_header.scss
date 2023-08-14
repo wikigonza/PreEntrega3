@@ -4,3 +4,12 @@ a {
       text-decoration: none;
     } /*Aquí el código hace que que los links visitados queden de color original y no violeta*/
   }
+
+  .navbar-nav .nav-link {
+    transition: opacity 0.7s ease-in-out;
+  }
+  
+  /* Define the hover effect */
+  .navbar-nav .nav-link:hover {
+    opacity: 0.7;
+  }
