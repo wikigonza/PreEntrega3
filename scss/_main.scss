@@ -1,0 +1,56 @@
+.carousel-item {
+    height: 80vh;
+    font-family: $font-principal;
+  } /*Aquí defino la altura del carrousel y la tipografía*/
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } /*Aquí defino el estilo de las imágenes del carrousel*/
+  @media screen and (max-width: 480px) {
+    .carousel-item {
+      height: 60vh;
+      font-family: $font-principal;
+    }
+    .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .imagenAdaptive {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  
+  
+  } /*Aquí defino el estilo de las imágenes del carrousel y de la imagen del main cuando la pantalla tiene un máximo de 480px*/
+
+  .textoPrincipal {
+    text-align: center;
+    color:$color-letra;
+    font-family: $font-principal;
+    font-size: 25px; /*Aquí creo una clase con tipografía y alineado para utilizar en página Nosotros*/
+  }
+  
+  .textoSobreImagen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-family: $font-principal;
+    font-size: $font-size;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .mapContainer {
+    text-align: center;
+  }
+  
+  .mapContainer iframe {
+    width: 80%; 
+    height: 500px; 
+  }
+  

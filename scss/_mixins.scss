@@ -1,0 +1,10 @@
+@mixin background($color) {
+    background-color: $color;
+  }
+  .body {
+    @include background(black);
+  }
+  
+  
+
+//   Aqui creo un mixin para que el footer y header compartan background color
