@@ -1,23 +1,60 @@
 @charset "UTF-8";
+.body {
+  background-color: black;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: content-box; /*Aquí seteo todo a 0*/
 }
 
-.textoPrincipal {
-  text-align: center;
-  color: aquamarine; /*Aquí creo una clase con tipografía y alineado para utilizar luego*/
-}
-
+@font-face {
+  font-family: emilio;
+  src: url(../assets/fonts/emilio.ttf);
+} /*Aquí llamo a la tipografía para luego sourcearla*/
+@font-face {
+  font-family: Ovo-Regular;
+  src: url(../assets/fonts/Ovo-Regular.ttf);
+} /*Aquí llamo a la tipografía para luego sourcearla*/
 a {
   color: aquamarine;
+  /*Aquí el código hace que que los links visitados queden de color original y no violeta*/
+}
+a a:visited {
+  text-decoration: none;
 }
 
-.contenedor {
-  position: relative;
+.carousel-item {
+  height: 80vh;
+  font-family: Ovo-Regular;
+} /*Aquí defino la altura del carrousel y la tipografía*/
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} /*Aquí defino el estilo de las imágenes del carrousel*/
+@media screen and (max-width: 480px) {
+  .carousel-item {
+    height: 60vh;
+    font-family: Ovo-Regular;
+  }
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .imagenAdaptive {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+} /*Aquí defino el estilo de las imágenes del carrousel y de la imagen del main cuando la pantalla tiene un máximo de 480px*/
+.textoPrincipal {
   text-align: center;
   color: aquamarine;
+  font-family: Ovo-Regular;
+  font-size: 25px; /*Aquí creo una clase con tipografía y alineado para utilizar en página Nosotros*/
 }
 
 .textoSobreImagen {
@@ -32,6 +69,28 @@ a {
   color: white;
 }
 
+.mapContainer {
+  text-align: center;
+}
+
+.mapContainer iframe {
+  width: 80%;
+  height: 500px;
+}
+
+.footer-icons {
+  font-family: Ovo-Regular;
+  text-align: center;
+  overflow: hidden;
+}
+.footer-icons .footer {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: aquamarine;
+}
+
+/*Aquí anido las clases para el footer*/
 /*Aquí creo el formulario y los estilos del mismo*/
 .claseFormulario {
   font-family: Ovo-Regular;
@@ -62,69 +121,10 @@ input[type=submit] {
   font-size: 20px;
 }
 
-.carousel-item {
-  height: 80vh;
-  font-family: Ovo-Regular;
-} /*Aquí defino la altura del carrousel y la tipografía*/
-.carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} /*Aquí defino el estilo de las imágenes del carrousel*/
-@media screen and (max-width: 480px) {
-  .carousel-item {
-    height: 60vh;
-    font-family: Ovo-Regular;
-  }
-  .carousel-item img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  .imagenAdaptive {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-} /*Aquí defino el estilo de las imágenes del carrousel y de la imagen del main cuando la pantalla tiene un máximo de 480px*/
-a:visited {
-  text-decoration: none;
-} /*Aquí el código hace que que los links visitados queden de color original y no violeta*/
-@font-face {
-  font-family: emilio;
-  src: url(../assets/fonts/emilio.ttf);
-} /*Aquí llamo a la tipografía para luego sourcearla*/
-@font-face {
-  font-family: Ovo-Regular;
-  src: url(../assets/fonts/Ovo-Regular.ttf);
-} /*Aquí llamo a la tipografía para luego sourcearla*/
-.footer-icons {
-  font-family: Ovo-Regular;
-  text-align: center;
-  overflow: hidden;
-}
-.footer-icons .footer {
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  color: aquamarine;
-}
-
-/*Aquí anido las clases para el footer*/
 /*Clases para las subscripciones*/
-/*A continuación creo los "botones" de subscripción. Para esto creo un contenedor que a su vez tiene tres otros elementos dentro: el tipo de plan (h2), el text del plan (p), y el botón de seleccionar (button)*/
 .subscripcion-container {
   text-align: center;
   font-family: Ovo-Regular;
-  /*.card {
-    height: 500px;
-    width: 300px;
-    font-size: 20px;
-    margin-bottom: 10px;*/
-  /*.imagenCard {
-          height: 50%;
-          object-fit: cover;
-  }*/
 }
 .subscripcion-container .subscripcion-box {
   width: 200px;
@@ -140,50 +140,12 @@ a:visited {
   font-size: 60px;
 }
 
-/*.subscripcion-container {
+.contenedor {
+  position: relative;
   text-align: center;
-  font-family: $font-principal;
+  color: aquamarine;
 }
 
-.subscripcion-box {
-  width: 300px;
-  height: 500px;
-  background-color: $color-letra;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 10px;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.subscripcion-box h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.subscripcion-box p {
-  margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-}
-
-.card {
-      height: 500px;
-      width: 300px;
-      font-size: 20px;
-      margin-bottom: 10px;
-
-.imagenCard {
-  height: 33%;
-  object-fit: scale-down;
-}
-*/
 @media screen and (max-width: 1560px) {
   .navbar-nav {
     flex-wrap: wrap;
@@ -193,23 +155,8 @@ a:visited {
     text-align: center;
   }
 } /*Aquí hago el media query para el navbar*/
-.mapContainer {
-  text-align: center;
-}
-
-.mapContainer iframe {
-  width: 80%;
-  height: 500px;
-}
-
 @media screen and (max-width: 767px) {
   .mapContainer iframe {
     height: 250px;
   }
-} /*Aquí hago el media query para el mapa en página Tienda*/
-.card {
-  height: 500px;
-  width: 300px;
-  font-size: 20px;
-  margin-bottom: 10px;
-}/*# sourceMappingURL=estilos.css.map */
+} /*Aquí hago el media query para el mapa en página Tienda*//*# sourceMappingURL=estilos.css.map */

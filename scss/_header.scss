@@ -1,0 +1,6 @@
+a {
+    color: $color-letra;
+    a:visited {
+      text-decoration: none;
+    } /*Aquí el código hace que que los links visitados queden de color original y no violeta*/
+  }

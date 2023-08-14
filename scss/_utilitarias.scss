@@ -1,0 +1,63 @@
+/*Aquí creo el formulario y los estilos del mismo*/
+.claseFormulario {
+    font-family: $font-principal;
+    font-size: $font-size;
+    color: $color-letra;
+  }
+  
+  /* Estilo del "input" */
+  input[type=text], select {
+    width: 100%;
+    padding: 12px $font-size;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo del botón */
+  input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: $font-principal;
+    font-size: $font-size;
+  }
+  
+  
+  
+  /*Clases para las subscripciones*/
+  
+  .subscripcion-container {
+      text-align: center;
+      font-family: $font-principal;
+    
+      .subscripcion-box {
+        width: 200px;
+        height: 500px;
+        background-color: $color-letra;
+        border: 1px solid #ccc;
+        padding: $font-size;
+        margin: 10px;
+        display: inline-block;
+        vertical-align: top;
+    
+       
+    
+        p {
+          font-size: 60px;
+        }
+      }
+    
+}  
+  .contenedor {
+    position: relative;
+    text-align: center;
+    color: $color-letra;
+}
+  
+  
